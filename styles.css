@@ -17,7 +17,9 @@ main {
     align-items: center;
 }
 
-#title { margin: .5em 0 0; }
+#title {
+    margin: .5em 0 0;
+}
 
 .underline {
     background-color: #64dfdf;
@@ -36,9 +38,14 @@ main {
     background-color: #80ffdb;
 }
 
-#title, #name { font-family: 'Righteous', cursive; }
+#title,
+#name {
+    font-family: 'Righteous', cursive;
+}
 
-#name { margin: 0; }
+#name {
+    margin: 0;
+}
 
 #div-img {
     height: 10.5em;
@@ -79,6 +86,7 @@ main {
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
 }
+
 #opinion p::selection {
     background-color: #fff;
     color: #6930c3;
@@ -94,26 +102,29 @@ button {
     background: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .fas {
     font-size: 2em;
     color: #6930c3;
-    cursor: pointer;
 
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
 }
-.fas:hover { color: #eee; }
+
+.fas:hover {
+    color: #eee;
+}
 
 #random-btn {
     border: 1px solid #6930c3;
     border-radius: .3em;
     padding: .4em .8em;
     margin: 1.5em 0 0;
-    cursor: pointer;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
 
@@ -122,6 +133,7 @@ button {
     -o-transition: all .5s;
     transition: all .5s;
 }
+
 #random-btn:hover {
     background-color: #6930c3;
     color: #fff;
@@ -131,33 +143,46 @@ button {
     -moz-transform: translateY(-.3em);
     -ms-transform: translateY(-.3em);
     -o-transform: translateY(-.3em);
-    transform:translateY(-.3em);
+    transform: translateY(-.3em);
 }
 
 @media only screen and (max-width: 320px) {
     #reviews {
         margin: 0 .6em .5em;
     }
+
     #opinion {
         font-size: 1em;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    #title { font-size: 2.5em; }
+    #title {
+        font-size: 2.5em;
+    }
 
-    #name { font-size: 1.8em; }
+    #name {
+        font-size: 1.8em;
+    }
 
     #div-img {
         height: 13em;
         width: 12em;
     }
 
-    #image { height: 12em; }
+    #image {
+        height: 12em;
+    }
 
-    #job { font-size: 1.1em; }
+    #job {
+        font-size: 1.1em;
+    }
 
-    #opinion { font-size: 1.1em; }
+    #opinion {
+        font-size: 1.1em;
+    }
 
-    .fas { font-size: 2.5em; }
+    .fas {
+        font-size: 2.5em;
+    }
 }
